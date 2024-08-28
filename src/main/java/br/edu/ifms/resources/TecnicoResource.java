@@ -21,7 +21,7 @@ import br.edu.ifms.dto.TecnicoDTO;
 import br.edu.ifms.services.TecnicoService;
 
 @RestController
-@RequestMapping(value = "/tecnicos")
+@RequestMapping(value = "/tecnicos")//localhost:8080/tecnicos?page=0&linesPerPage=20
 public class TecnicoResource {
 	
 	@Autowired
@@ -82,3 +82,7 @@ public class TecnicoResource {
 		return ResponseEntity.noContent().build();
 	}
 }
+
+
+
+
